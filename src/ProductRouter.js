@@ -19,7 +19,7 @@ const ProductRouter = () => {
             <nav class="bg-pink-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
                 <h1 class="text-2xl">SHOPPING</h1>
 
-                <ul class="flex gap-5 text-gray-600 hidden md:flex">
+                <ul class="flex gap-5 text-gray-600 md:flex">
 
                     <li>
                         <Link className="hover:text-black" to="/productlist">Home</Link>
@@ -31,6 +31,7 @@ const ProductRouter = () => {
                     </li>
                 </ul>
             </nav>
+           
 
             <Routes>
                 <Route path="/productlist" element={<ProductList addToCart={addToCart} removeFromCart={removeFromCart} />} />

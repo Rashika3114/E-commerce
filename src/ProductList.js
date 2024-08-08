@@ -57,7 +57,7 @@ const ProductList = ({ addToCart }) => {
                         value={searchTerm}
                         onChange={handleSearchChange}
                         placeholder="Search products..."
-                        className="border p-2 rounded ml-96 w-80 border-current"
+                        className="border p-1 rounded  w-80 border-current"
                     />
                     <select
                         value={filterCategory}

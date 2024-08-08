@@ -21,19 +21,19 @@ function Signup(props){
     setSignupSuccess(true);
     setTimeout(() => {
         navigate("/");
-    }, 2000); // Navigate to login page after 2 seconds
+    }, 2000); 
     }
     return(
-        <div  className="bg-solid p-10" >
+        <div style={{backgroundColor:"solid white",padding:"10px",textAlign:"center"}} >
 
-        <div className="bg-white p-40 border rounded-md">
+        <div style={{backgroundColor:"white", padding:"10px",borderRadius:"5px" }}>
         <h1 className="text-3xl">Welcome To Shopping</h1>
         <p>Signup Here</p>
 
         <div className="flex flex-col gap-3 my-3">
-            <input type="text" onChange={handleuname} className="w-52 bg-transparent border-black p-1 border rounded-md" typeof="email" placeholder="Enter your email id"></input>
-            <input type="text" onChange={handlepassword} className="w-52 bg-transparent   border-black p-1 border rounded-md" placeholder="password"></input>
-            <input type="text" className="w-52 bg-transparent  border-black p-1 border rounded-md" placeholder="confirm-password"></input>
+            <input type="text" onChange={handleuname}  typeof="email" style={{border:"gray solid 2px",width:"50%"}} placeholder="Enter your email id"></input>
+            <input type="text" onChange={handlepassword} style={{border:"gray solid 2px",width:"50%"}} placeholder="password"></input>
+            <input type="text" style={{border:"gray solid 2px",width:"50%"}} placeholder="confirm-password"></input>
 
             <button className="bg-[rgb(252,241,84)] w-24 border rounded-md p-1" onClick={Adduser}>Signup</button>
            <p>Already have an account <Link to={"/"} className="underline">Login</Link></p>
